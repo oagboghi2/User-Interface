@@ -48,9 +48,7 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
-}
+
 
 html, body {
     height: 100%;
@@ -63,10 +61,39 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-header{
+* {
+	border-style: solid;
+	border-color: red;
+}
+
+header {
+	/*width: 600px;
+	height: 100px;*/
 	display: flex;
 	justify-content: center;
 	align-items: space-between;
+}
+
+nav {
+	border-style: solid;
+	border-color: red;
+	display: flex;
+	justify-content: space-around;
+}
+
+.nav-bar {
+	width: 100px;
+	height: 100px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.logo{
+	width: 100px;
+	height: 50px;
+	padding-left: 25px;
+	padding-top: 25px;
 }
 
 .circle{
@@ -75,6 +102,7 @@ header{
 }
 
 .cta{
+	padding: 20px;
 	margin: 30px;
 	display: flex;
 	justify-content: center;
